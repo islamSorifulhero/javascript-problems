@@ -18,14 +18,26 @@
 // var result = getArraySum(numbers);
 // console.log("total of the numbers: ", result);
 
-function sumNum(num){
+// function sumNum(num){
+//     var sum = 0;
+//     for (var i = 0; i < num.length; i++){
+//         var element = num[i];
+//         sum = sum + element;
+//     }
+//     return sum;
+// }
+// var num = [1, 2, 2, 2, 3, 4, 5, 5]
+// var output = sumNum(num);
+// console.log("all nums is: " , output)
+
+function classNum(num){
     var sum = 0;
     for (var i = 0; i < num.length; i++){
-        var element = num[i];
-        sum = sum + element;
+        var elementNum = num[i];
+        sum = elementNum + sum;
     }
     return sum;
 }
-var num = [1, 2, 2, 2, 3, 4, 5, 5]
-var output = sumNum(num);
-console.log("all nums is: " , output)
+var num = [1, 2, 3, 4, 5, 6, 7]
+var output = classNum(num);
+console.log("All num is: ", output);
