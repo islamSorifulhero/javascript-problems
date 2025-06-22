@@ -14,9 +14,13 @@
 // var result3 = Math.random(num) * 10;
 // console.log(result3)
 
-var num = 3.333;
-for(var i = 0; i <10; i++) {
-    var result4 = Math.random(num) * 6;
-    var output = Math.round(result4)
-    console.log(output)
-}
+// var num = 3.333;
+// for(var i = 0; i <10; i++) {
+//     var result4 = Math.random(num) * 6;
+//     var output = Math.round(result4)
+//     console.log(output)
+// }
+
+var sorifulAge = 22.5;
+var age = Math.random(sorifulAge);
+console.log(age)
