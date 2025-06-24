@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        .main h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="first-article">
+        <h1>soriful</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <main>
+        <section>
+            <h3>Exploring dom</h3>
+            <p class="first">soriful hero and all of then</p>
+            <p class="first">Islam soriful hero and all of then</p>
+            <p class="first">soriful Islam santo hero and all of then</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, neque.</p>
+        </section>
+    </main>
+
+    <script>
+        // document.getElementById('firsts').style.color = 'red';
+        // 
+        // document.getElementById('firsts');
+        // firsts.style.color = 'red';
+        // firsts.style.backgroundColor = 'green';
+        // firsts.style.fontSize = '30px';
+
+    //    var firster = document.getElementsByClassName('first');
+    //     for (var i = 0; i < firster.length; i++){
+    //         var element = firster[i];
+    //         element.style.color = 'red';
+    //         element.style.fontSize = '25px';
+    //     }
+
+       var firster = document.querySelectorAll('.main h1');
+        for (var i = 0; i < firster.length; i++){
+            var element = firster[i];
+            element.innerHTML = 'Lekhok-' + (i + 1);
+            element.style.backgroundColor = 'green';
+            element.style.fontSize = '25px';
+        }
+    </script>
+</body>
+</html>
