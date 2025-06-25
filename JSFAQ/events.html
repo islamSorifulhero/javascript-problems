@@ -7,6 +7,31 @@
 </head>
 <body>
     <h1 onclick="alert('bangladeshi')">Exploring Events</h1>
-    <button onclick="alert(7)">click me</button>
+    <!-- <button onclick="alert(7)">click me</button> -->
+     <!-- <button onclick="handleClick">Click me</button> -->
+
+    <button>click me-0</button>
+    <button id="second">click me-1</button>
+    <button>click me-2</button>
+    <button id="lastPersion">click me-3</button>
+
+     <script>
+        // const secondButton = document.getElementById('second');
+        // secondButton.onclick = function(){
+        //  console.log('second person click')
+        // }
+
+
+        // function handleClick(){
+        //     document.body.style.backgroundColor = 'tomato';
+        // }
+        // const secondButton = document.getElementById('second');
+        // secondButton.addEventListener('click', handleClick);
+
+
+        document.getElementById('lastPersion').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green';
+        })
+     </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>my list</h1>
+        <ul id="myList">
+            <li id="first" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Quis, sed delectus.</li>
+            <li class="item">Autem, nobis fugiat?</li>
+            <li class="item">Doloribus, dignissimos autem.</li>
+            <li class="item">Quo, similique molestias!</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('first').addEventListener('click', function(event){
+            console.log('first item clicked')
+        })
+
+
+        document.getElementById('mylist').addEventListener('click', function(event){
+            console.log('ul clicked')
+        })
+        
+
+        document.getElementById('container').addEventListener('click', function(event){
+            console.log('container clicked')
+        })
+
+    </script>
+</body>
+</html>
