@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inser-Dom</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article id="first-article">
+                <h3>Explor dom</h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <p id="p"></p>
+            </article>
+            <article>
+                <h3>Grocery list</h3>
+                <ul id="gift-list">
+                    <li>gift item-1</li>
+                    <li>gift item-2</li>
+                    <li>gift item-3</li>
+                    <li>gift item-4</li>
+                    <li>gift item-5</li>
+                </ul>
+            </article>
+            
+        </section>
+    </main>
+
+    <script>
+        const article = document.getElementById('first-article');
+        const newParagraph = document.createElementById('p');
+        newParagraph.innerHTML = 'This is added by javascript';
+        article.appendChild(newParagraph);
+
+        // add one more gift item
+        // const ul = document.getElementById('gift-list');
+        // const li = document.createElement('li');
+        // li.innerHTML = 'Brand new gift';
+        // ul.appendChild(li);
+    </script>
+</body>
+</html>
