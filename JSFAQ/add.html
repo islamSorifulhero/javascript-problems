@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>added</title>
+</head>
+<body>
+    <div id="container">
+        <h1>my all list</h1>
+        <ul id="myList">
+            <li class="item">computer-1</li>
+            <li class="item">computer-2</li>
+            <li class="item">computer-3</li>
+        </ul>
+        <button id="addNew">Add New Item</button>
+    </div>
+    <script>
+        const safid = document.getElementsByClassName('item');
+        for(var i = 0; i < safid.length; i++) {
+            var item = safid[i];
+            item.addEventListener('click', function(result){
+                result.target.parentNode.removeChild(result.target);
+            })
+        }
+
+
+        document.getElementById('addNew').addEventListener('click', function(event){
+            var itemParent = document.getElementById('myList');
+            var newItem = document.createElement('li');
+            newItem.innerText = 'computer-new';
+            itemParent.appendChild(newItem);
+        })
+
+        document.getElementById('myList').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+    </script>
+</body>
+</html>
