@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>my list</h1>
+        <ul id="myList">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Quis, sed delectus.</li>
+            <li class="item">Autem, nobis fugiat?</li>
+            <li class="item">Doloribus, dignissimos autem.</li>
+            <li class="item">Quo, similique molestias!</li>
+        </ul>
+    </div>
+
+    <script>
+        // var age = document.getElementsByClassName('item');
+        // for (let i = 0; i < age.length; i++) {
+        //     var item = age[i];
+        //     item.addEventListener('click', function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+
+        const safid = document.getElementsByClassName('item');
+        for(var i = 0; i < safid.length; i++) {
+            var item = safid[i];
+            item.addEventListener('click', function(result){
+                result.target.parentNode.removeChild(result.target);
+            })
+        }
+    </script>
+</body>
+</html>
